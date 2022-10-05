@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "puede-volver-a-pasar-coronavirus_72ff7a02_900x900.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "puede-volver-a-pasar-coronavirus_72ff7a02_900x900-1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "puede-volver-a-pasar-coronavirus_72ff7a02_900x900-2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -13,6 +13,16 @@
 		09E54F2028EDA26400F5E6DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E54F1E28EDA26400F5E6DC /* Main.storyboard */; };
 		09E54F2228EDA26B00F5E6DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E54F2128EDA26B00F5E6DC /* Assets.xcassets */; };
 		09E54F2528EDA26B00F5E6DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E54F2328EDA26B00F5E6DC /* LaunchScreen.storyboard */; };
+		09E54F3028EDA4CA00F5E6DC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F2F28EDA4CA00F5E6DC /* Model.swift */; };
+		09E54F3228EDA63400F5E6DC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F3128EDA63400F5E6DC /* CollectionViewCell.swift */; };
+		09E54F3428EDA67700F5E6DC /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F3328EDA67700F5E6DC /* PhotoCell.swift */; };
+		09E54F3628EDA6C700F5E6DC /* CirclePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F3528EDA6C700F5E6DC /* CirclePhotoCell.swift */; };
+		09E54F3828EDA70C00F5E6DC /* FourViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F3728EDA70C00F5E6DC /* FourViewCell.swift */; };
+		09E54F3B28EDA7B600F5E6DC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 09E54F3A28EDA7B600F5E6DC /* SnapKit */; };
+		09E54F3D28EDA80200F5E6DC /* ListFoldersViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F3C28EDA80200F5E6DC /* ListFoldersViewCell.swift */; };
+		09E54F3F28EDA82A00F5E6DC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F3E28EDA82A00F5E6DC /* TableViewCell.swift */; };
+		09E54F4128EDA8F400F5E6DC /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F4028EDA8F400F5E6DC /* CollectionReusableView.swift */; };
+		09E54F4328EDA92D00F5E6DC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F4228EDA92D00F5E6DC /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,15 @@
 		09E54F2128EDA26B00F5E6DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09E54F2428EDA26B00F5E6DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09E54F2628EDA26B00F5E6DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09E54F2F28EDA4CA00F5E6DC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		09E54F3128EDA63400F5E6DC /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		09E54F3328EDA67700F5E6DC /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		09E54F3528EDA6C700F5E6DC /* CirclePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePhotoCell.swift; sourceTree = "<group>"; };
+		09E54F3728EDA70C00F5E6DC /* FourViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewCell.swift; sourceTree = "<group>"; };
+		09E54F3C28EDA80200F5E6DC /* ListFoldersViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFoldersViewCell.swift; sourceTree = "<group>"; };
+		09E54F3E28EDA82A00F5E6DC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		09E54F4028EDA8F400F5E6DC /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		09E54F4228EDA92D00F5E6DC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E54F3B28EDA7B600F5E6DC /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +76,48 @@
 		09E54F1728EDA26400F5E6DC /* AppleGallery */ = {
 			isa = PBXGroup;
 			children = (
-				09E54F1828EDA26400F5E6DC /* AppDelegate.swift */,
-				09E54F1A28EDA26400F5E6DC /* SceneDelegate.swift */,
-				09E54F1C28EDA26400F5E6DC /* ViewController.swift */,
+				09E54F2E28EDA46E00F5E6DC /* Cells */,
+				09E54F2D28EDA45500F5E6DC /* CompositionalLayout */,
+				09E54F2C28EDA42900F5E6DC /* App */,
 				09E54F1E28EDA26400F5E6DC /* Main.storyboard */,
-				09E54F2128EDA26B00F5E6DC /* Assets.xcassets */,
 				09E54F2328EDA26B00F5E6DC /* LaunchScreen.storyboard */,
 				09E54F2628EDA26B00F5E6DC /* Info.plist */,
 			);
 			path = AppleGallery;
+			sourceTree = "<group>";
+		};
+		09E54F2C28EDA42900F5E6DC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				09E54F2128EDA26B00F5E6DC /* Assets.xcassets */,
+				09E54F1A28EDA26400F5E6DC /* SceneDelegate.swift */,
+				09E54F1828EDA26400F5E6DC /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		09E54F2D28EDA45500F5E6DC /* CompositionalLayout */ = {
+			isa = PBXGroup;
+			children = (
+				09E54F1C28EDA26400F5E6DC /* ViewController.swift */,
+				09E54F2F28EDA4CA00F5E6DC /* Model.swift */,
+				09E54F3128EDA63400F5E6DC /* CollectionViewCell.swift */,
+				09E54F4028EDA8F400F5E6DC /* CollectionReusableView.swift */,
+				09E54F4228EDA92D00F5E6DC /* TabBarController.swift */,
+			);
+			path = CompositionalLayout;
+			sourceTree = "<group>";
+		};
+		09E54F2E28EDA46E00F5E6DC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				09E54F3328EDA67700F5E6DC /* PhotoCell.swift */,
+				09E54F3528EDA6C700F5E6DC /* CirclePhotoCell.swift */,
+				09E54F3728EDA70C00F5E6DC /* FourViewCell.swift */,
+				09E54F3C28EDA80200F5E6DC /* ListFoldersViewCell.swift */,
+				09E54F3E28EDA82A00F5E6DC /* TableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +136,9 @@
 			dependencies = (
 			);
 			name = AppleGallery;
+			packageProductDependencies = (
+				09E54F3A28EDA7B600F5E6DC /* SnapKit */,
+			);
 			productName = AppleGallery;
 			productReference = 09E54F1528EDA26400F5E6DC /* AppleGallery.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +167,9 @@
 				Base,
 			);
 			mainGroup = 09E54F0C28EDA26400F5E6DC;
+			packageReferences = (
+				09E54F3928EDA7B600F5E6DC /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 09E54F1628EDA26400F5E6DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +197,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E54F3228EDA63400F5E6DC /* CollectionViewCell.swift in Sources */,
+				09E54F4128EDA8F400F5E6DC /* CollectionReusableView.swift in Sources */,
+				09E54F3D28EDA80200F5E6DC /* ListFoldersViewCell.swift in Sources */,
+				09E54F3628EDA6C700F5E6DC /* CirclePhotoCell.swift in Sources */,
 				09E54F1D28EDA26400F5E6DC /* ViewController.swift in Sources */,
+				09E54F3428EDA67700F5E6DC /* PhotoCell.swift in Sources */,
+				09E54F3F28EDA82A00F5E6DC /* TableViewCell.swift in Sources */,
+				09E54F3828EDA70C00F5E6DC /* FourViewCell.swift in Sources */,
 				09E54F1928EDA26400F5E6DC /* AppDelegate.swift in Sources */,
+				09E54F4328EDA92D00F5E6DC /* TabBarController.swift in Sources */,
 				09E54F1B28EDA26400F5E6DC /* SceneDelegate.swift in Sources */,
+				09E54F3028EDA4CA00F5E6DC /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +424,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09E54F3928EDA7B600F5E6DC /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09E54F3A28EDA7B600F5E6DC /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09E54F3928EDA7B600F5E6DC /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 09E54F0D28EDA26400F5E6DC /* Project object */;
 }
