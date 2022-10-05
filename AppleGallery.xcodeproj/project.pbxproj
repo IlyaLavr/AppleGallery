@@ -21,6 +21,8 @@
 		09E54F3B28EDA7B600F5E6DC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 09E54F3A28EDA7B600F5E6DC /* SnapKit */; };
 		09E54F3D28EDA80200F5E6DC /* ListFoldersViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F3C28EDA80200F5E6DC /* ListFoldersViewCell.swift */; };
 		09E54F3F28EDA82A00F5E6DC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F3E28EDA82A00F5E6DC /* TableViewCell.swift */; };
+		09E54F4128EDA8F400F5E6DC /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F4028EDA8F400F5E6DC /* CollectionReusableView.swift */; };
+		09E54F4328EDA92D00F5E6DC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F4228EDA92D00F5E6DC /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		09E54F3728EDA70C00F5E6DC /* FourViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewCell.swift; sourceTree = "<group>"; };
 		09E54F3C28EDA80200F5E6DC /* ListFoldersViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFoldersViewCell.swift; sourceTree = "<group>"; };
 		09E54F3E28EDA82A00F5E6DC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		09E54F4028EDA8F400F5E6DC /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		09E54F4228EDA92D00F5E6DC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				09E54F1C28EDA26400F5E6DC /* ViewController.swift */,
 				09E54F2F28EDA4CA00F5E6DC /* Model.swift */,
 				09E54F3128EDA63400F5E6DC /* CollectionViewCell.swift */,
+				09E54F4028EDA8F400F5E6DC /* CollectionReusableView.swift */,
+				09E54F4228EDA92D00F5E6DC /* TabBarController.swift */,
 			);
 			path = CompositionalLayout;
 			sourceTree = "<group>";
@@ -192,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09E54F3228EDA63400F5E6DC /* CollectionViewCell.swift in Sources */,
+				09E54F4128EDA8F400F5E6DC /* CollectionReusableView.swift in Sources */,
 				09E54F3D28EDA80200F5E6DC /* ListFoldersViewCell.swift in Sources */,
 				09E54F3628EDA6C700F5E6DC /* CirclePhotoCell.swift in Sources */,
 				09E54F1D28EDA26400F5E6DC /* ViewController.swift in Sources */,
@@ -199,6 +206,7 @@
 				09E54F3F28EDA82A00F5E6DC /* TableViewCell.swift in Sources */,
 				09E54F3828EDA70C00F5E6DC /* FourViewCell.swift in Sources */,
 				09E54F1928EDA26400F5E6DC /* AppDelegate.swift in Sources */,
+				09E54F4328EDA92D00F5E6DC /* TabBarController.swift in Sources */,
 				09E54F1B28EDA26400F5E6DC /* SceneDelegate.swift in Sources */,
 				09E54F3028EDA4CA00F5E6DC /* Model.swift in Sources */,
 			);
