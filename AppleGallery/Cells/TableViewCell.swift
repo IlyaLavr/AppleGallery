@@ -43,7 +43,7 @@ class TableViewCell: UITableViewCell {
         setupHierarhy()
         setupLayout()
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("Error")
     }

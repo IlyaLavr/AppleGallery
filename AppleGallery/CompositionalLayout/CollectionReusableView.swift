@@ -72,7 +72,6 @@ class CollectionReusableView: UICollectionReusableView {
         }
     }
     
-    
     func configuration(headerLeftTitle: String, headerRightTitle: String?) {
         leftTitle.text = headerLeftTitle
         rightTitle.text = headerRightTitle

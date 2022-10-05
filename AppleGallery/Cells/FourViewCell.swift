@@ -18,7 +18,6 @@ class FourViewCell: UICollectionViewCell {
         let image = UIImageView()
         image.clipsToBounds = true
         image.layer.cornerRadius = 7
-        
         image.layer.shadowColor = UIColor.white.cgColor
         image.layer.shadowOpacity = 0.3
         image.layer.shadowOffset = .zero
@@ -66,14 +65,14 @@ class FourViewCell: UICollectionViewCell {
         label.font = .systemFont(ofSize: 16)
         return label
     }()
-
+    
     lazy var quantity: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 13)
         label.textColor = .lightGray
         return label
     }()
-
+    
     lazy var stack: UIStackView = {
         let stack = UIStackView()
         return stack

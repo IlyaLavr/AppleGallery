@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "two.jpeg",
+      "filename" : "four.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "two-1.jpeg",
+      "filename" : "four-1.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "two-2.jpeg",
+      "filename" : "four-2.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

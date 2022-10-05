@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var models: [Sections] = Sections.getSections()
-
+    
     // MARK: - Elements
     
     private lazy var collectionView: UICollectionView = {
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         collectionView.register(ListFoldersViewCell.self, forCellWithReuseIdentifier: ListFoldersViewCell.identifier)
         return collectionView
     }()
-
+    
     // MARK: - Lyfecycle
     
     override func viewDidLoad() {
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         setupHierarhy()
         setupLayout()
     }
-
+    
     // MARK: - Setup
     
     private func setupHierarhy() {
@@ -49,8 +49,6 @@ class ViewController: UIViewController {
         collectionView.snp.makeConstraints { make in
             make.left.top.right.bottom.equalTo(view)
         }
-        
-        
     }
     
     private func createLayout() -> UICollectionViewCompositionalLayout {
@@ -108,8 +106,8 @@ class ViewController: UIViewController {
                                                        heightDimension: .absolute(235))
                 
                 let layoutGroup = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
-                                                                   subitem: layoutItem,
-                                                                   count: 1)
+                                                                     subitem: layoutItem,
+                                                                     count: 1)
                 
                 let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
                 layoutSection.contentInsets = NSDirectionalEdgeInsets(top: 10,
@@ -144,8 +142,8 @@ class ViewController: UIViewController {
                                                        heightDimension: .absolute(235))
                 
                 let layoutGroup = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
-                                                                   subitem: layoutItem,
-                                                                   count: 1)
+                                                                     subitem: layoutItem,
+                                                                     count: 1)
                 
                 let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
                 layoutSection.contentInsets = NSDirectionalEdgeInsets(top: 10,
@@ -170,13 +168,13 @@ class ViewController: UIViewController {
                     widthDimension: .fractionalWidth(1),
                     heightDimension: .fractionalHeight(1)
                 )
-
+                
                 let layoutItem = NSCollectionLayoutItem(layoutSize: itemSize)
                 layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 0,
                                                                    leading: 5,
                                                                    bottom: 0,
                                                                    trailing: 5)
-
+                
                 let groupSize = NSCollectionLayoutSize(
                     widthDimension: .fractionalWidth(1.1),
                     heightDimension: .estimated(500)
@@ -185,7 +183,7 @@ class ViewController: UIViewController {
                     layoutSize: groupSize,
                     subitems: [layoutItem]
                 )
-
+                
                 let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
                 layoutSection.orthogonalScrollingBehavior = .groupPagingCentered
                 layoutSection.contentInsets = NSDirectionalEdgeInsets(top: 0,
@@ -221,13 +219,13 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         let model = models[indexPath.section].settings[indexPath.item]
         switch model {
         case .photoCell(let model):
-
+            
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotoCell.identifier, for: indexPath) as? PhotoCell else {
                 return UICollectionViewCell()
             }
             cell.configuration(model: model)
             return cell
-    
+            
         case .circlePotoCell(let model):
             
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CirclePhotoCell.identifier, for: indexPath) as? CirclePhotoCell else {
@@ -259,16 +257,16 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
             return UICollectionReusableView()
         }
         switch indexPath.section {
-            case 0:
-                header.configuration(headerLeftTitle: "Мои альбомы", headerRightTitle: "Все")
-            case 1:
-                header.configuration(headerLeftTitle: "Общие альбомы", headerRightTitle: "Все")
-            case 2:
-                header.configuration(headerLeftTitle: "Люди и места", headerRightTitle: nil)
-            case 3:
-                header.configuration(headerLeftTitle: "Типы медиафайлов", headerRightTitle: nil)
-            default:
-                header.configuration(headerLeftTitle: "Title", headerRightTitle: "title")
+        case 0:
+            header.configuration(headerLeftTitle: "Мои альбомы", headerRightTitle: "Все")
+        case 1:
+            header.configuration(headerLeftTitle: "Общие альбомы", headerRightTitle: "Все")
+        case 2:
+            header.configuration(headerLeftTitle: "Люди и места", headerRightTitle: nil)
+        case 3:
+            header.configuration(headerLeftTitle: "Типы медиафайлов", headerRightTitle: nil)
+        default:
+            header.configuration(headerLeftTitle: "Title", headerRightTitle: "title")
         }
         return header
     }
