@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         setupHierarhy()
         setupLayout()
+        addPhotoAlbum()
     }
     
     // MARK: - Setup
@@ -49,6 +50,17 @@ class ViewController: UIViewController {
         collectionView.snp.makeConstraints { make in
             make.left.top.right.bottom.equalTo(view)
         }
+    }
+    
+    private func addPhotoAlbum () {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
+                                                           target: self,
+                                                           action: #selector(addAlbum))
+    }
+    
+    @objc func addAlbum () {
+        
     }
     
     private func createLayout() -> UICollectionViewCompositionalLayout {
@@ -249,9 +261,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
             return cell
         }
     }
-    
-    // Header
-    
+
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CollectionReusableView.cellHeaderIdentifier, for: indexPath) as? CollectionReusableView else {
             return UICollectionReusableView()

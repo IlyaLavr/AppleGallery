@@ -84,8 +84,8 @@ class CirclePhotoCell: UICollectionViewCell {
         
         circleImage.snp.makeConstraints { make in
             make.right.equalTo(image.snp.right).offset(-15)
-            make.width.height.equalTo(40)
-            make.bottom.equalTo(-20)
+            make.width.height.equalTo(45)
+            make.bottom.equalTo(-30)
         }
     }
     
