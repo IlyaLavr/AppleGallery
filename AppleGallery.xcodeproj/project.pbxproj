@@ -16,6 +16,7 @@
 		09E54F3028EDA4CA00F5E6DC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F2F28EDA4CA00F5E6DC /* Model.swift */; };
 		09E54F3228EDA63400F5E6DC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F3128EDA63400F5E6DC /* CollectionViewCell.swift */; };
 		09E54F3428EDA67700F5E6DC /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F3328EDA67700F5E6DC /* PhotoCell.swift */; };
+		09E54F3628EDA6C700F5E6DC /* CirclePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F3528EDA6C700F5E6DC /* CirclePhotoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		09E54F2F28EDA4CA00F5E6DC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		09E54F3128EDA63400F5E6DC /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		09E54F3328EDA67700F5E6DC /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		09E54F3528EDA6C700F5E6DC /* CirclePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				09E54F3328EDA67700F5E6DC /* PhotoCell.swift */,
+				09E54F3528EDA6C700F5E6DC /* CirclePhotoCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09E54F3228EDA63400F5E6DC /* CollectionViewCell.swift in Sources */,
+				09E54F3628EDA6C700F5E6DC /* CirclePhotoCell.swift in Sources */,
 				09E54F1D28EDA26400F5E6DC /* ViewController.swift in Sources */,
 				09E54F3428EDA67700F5E6DC /* PhotoCell.swift in Sources */,
 				09E54F1928EDA26400F5E6DC /* AppDelegate.swift in Sources */,
