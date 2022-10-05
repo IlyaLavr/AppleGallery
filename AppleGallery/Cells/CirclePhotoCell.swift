@@ -19,7 +19,6 @@ class CirclePhotoCell: UICollectionViewCell {
         image.contentMode = .scaleAspectFit
         image.clipsToBounds = true
         image.layer.cornerRadius = 20
-        
         return image
     }()
     
@@ -37,14 +36,14 @@ class CirclePhotoCell: UICollectionViewCell {
         label.font = .systemFont(ofSize: 16)
         return label
     }()
-
+    
     lazy var quantity: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 13)
         label.textColor = .lightGray
         return label
     }()
-
+    
     // MARK: - Initializers
     
     override init(frame: CGRect) {
@@ -60,7 +59,6 @@ class CirclePhotoCell: UICollectionViewCell {
     // MARK: - Setup
     
     private func setupHierarchy() {
-//        addSubview(circleI
         image.addSubview(circleImage)
         addSubview(image)
         addSubview(nameItem)
@@ -68,7 +66,7 @@ class CirclePhotoCell: UICollectionViewCell {
     }
     
     private func setupLayout() {
-        
+      
         image.snp.makeConstraints { make in
             make.height.equalTo(self)
             make.width.equalTo(self)

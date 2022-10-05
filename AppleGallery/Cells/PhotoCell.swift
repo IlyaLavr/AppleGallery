@@ -19,7 +19,6 @@ class PhotoCell: UICollectionViewCell {
         image.contentMode = .scaleAspectFit
         image.clipsToBounds = true
         image.layer.cornerRadius = 10
-        
         return image
     }()
     
@@ -28,14 +27,14 @@ class PhotoCell: UICollectionViewCell {
         label.font = .systemFont(ofSize: 16)
         return label
     }()
-
+    
     lazy var quantity: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 13)
         label.textColor = .lightGray
         return label
     }()
-
+    
     // MARK: - Initializers
     
     override init(frame: CGRect) {
@@ -73,7 +72,6 @@ class PhotoCell: UICollectionViewCell {
             make.top.equalTo(nameItem.snp.bottom).offset(1)
             make.width.equalTo(200)
         }
-        
     }
     
     override func prepareForReuse() {

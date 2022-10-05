@@ -71,7 +71,7 @@ extension Sections {
             ]),
             
             Sections(title: "", settings: [
-                .fourPhotoCell(model: SettingsFourPhotoCell(name: "Люди", bottomLabel: "12", image: UIImage(named: "black"), topLeftPhoto: UIImage(named: "one"), topRightPhoto: UIImage(named: "two"), bottomRigthPhoto: UIImage(named: "three"), bootomLeftPhoto: UIImage(named: "oae"))),
+                .fourPhotoCell(model: SettingsFourPhotoCell(name: "Люди", bottomLabel: "12", image: UIImage(named: "black"), topLeftPhoto: UIImage(named: "one"), topRightPhoto: UIImage(named: "two"), bottomRigthPhoto: UIImage(named: "three"), bootomLeftPhoto: UIImage(named: "four"))),
                 .photoCell(model: SettingsPhotohCell(name: "Места", photo: UIImage(named: "map"), number: 1200))
             ]),
             
