@@ -18,6 +18,9 @@
 		09E54F3428EDA67700F5E6DC /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F3328EDA67700F5E6DC /* PhotoCell.swift */; };
 		09E54F3628EDA6C700F5E6DC /* CirclePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F3528EDA6C700F5E6DC /* CirclePhotoCell.swift */; };
 		09E54F3828EDA70C00F5E6DC /* FourViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F3728EDA70C00F5E6DC /* FourViewCell.swift */; };
+		09E54F3B28EDA7B600F5E6DC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 09E54F3A28EDA7B600F5E6DC /* SnapKit */; };
+		09E54F3D28EDA80200F5E6DC /* ListFoldersViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F3C28EDA80200F5E6DC /* ListFoldersViewCell.swift */; };
+		09E54F3F28EDA82A00F5E6DC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E54F3E28EDA82A00F5E6DC /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,8 @@
 		09E54F3328EDA67700F5E6DC /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		09E54F3528EDA6C700F5E6DC /* CirclePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePhotoCell.swift; sourceTree = "<group>"; };
 		09E54F3728EDA70C00F5E6DC /* FourViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewCell.swift; sourceTree = "<group>"; };
+		09E54F3C28EDA80200F5E6DC /* ListFoldersViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFoldersViewCell.swift; sourceTree = "<group>"; };
+		09E54F3E28EDA82A00F5E6DC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E54F3B28EDA7B600F5E6DC /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +108,8 @@
 				09E54F3328EDA67700F5E6DC /* PhotoCell.swift */,
 				09E54F3528EDA6C700F5E6DC /* CirclePhotoCell.swift */,
 				09E54F3728EDA70C00F5E6DC /* FourViewCell.swift */,
+				09E54F3C28EDA80200F5E6DC /* ListFoldersViewCell.swift */,
+				09E54F3E28EDA82A00F5E6DC /* TableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -122,6 +130,9 @@
 			dependencies = (
 			);
 			name = AppleGallery;
+			packageProductDependencies = (
+				09E54F3A28EDA7B600F5E6DC /* SnapKit */,
+			);
 			productName = AppleGallery;
 			productReference = 09E54F1528EDA26400F5E6DC /* AppleGallery.app */;
 			productType = "com.apple.product-type.application";
@@ -150,6 +161,9 @@
 				Base,
 			);
 			mainGroup = 09E54F0C28EDA26400F5E6DC;
+			packageReferences = (
+				09E54F3928EDA7B600F5E6DC /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 09E54F1628EDA26400F5E6DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -178,9 +192,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				09E54F3228EDA63400F5E6DC /* CollectionViewCell.swift in Sources */,
+				09E54F3D28EDA80200F5E6DC /* ListFoldersViewCell.swift in Sources */,
 				09E54F3628EDA6C700F5E6DC /* CirclePhotoCell.swift in Sources */,
 				09E54F1D28EDA26400F5E6DC /* ViewController.swift in Sources */,
 				09E54F3428EDA67700F5E6DC /* PhotoCell.swift in Sources */,
+				09E54F3F28EDA82A00F5E6DC /* TableViewCell.swift in Sources */,
 				09E54F3828EDA70C00F5E6DC /* FourViewCell.swift in Sources */,
 				09E54F1928EDA26400F5E6DC /* AppDelegate.swift in Sources */,
 				09E54F1B28EDA26400F5E6DC /* SceneDelegate.swift in Sources */,
@@ -400,6 +416,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09E54F3928EDA7B600F5E6DC /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09E54F3A28EDA7B600F5E6DC /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09E54F3928EDA7B600F5E6DC /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 09E54F0D28EDA26400F5E6DC /* Project object */;
 }
